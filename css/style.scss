@@ -1,0 +1,80 @@
+$header-bg: #2C2B2B;
+$pc-width: 1100px;
+$slider-bg: #424040;
+$blue1 : #2580ba;
+$spaceBetween : 20px;
+$after-color : #d7d7d7;
+$cat-font-size : 14px;
+$img-pro : 9/16;
+$hover-pattern : #4F4E4E;
+$main-slider-bg :#4F4E4E;
+$a : #2C2B2B;
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin transition($time) {
+  -webkit-transition: all $time ease; /* Safari 3.1 to 6.0 */
+	-moz-transition: all $time ease;
+	 -ms-transition: all $time ease;
+	 -o-transition: all $time ease;
+	transition: all $time ease;
+}
+
+a {text-decoration:none;}
+header {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 40px;
+	background: $header-bg;
+	padding: 10px 0px;
+	overflow: hidden;
+	#container {
+		width: $pc-width;
+		margin: 0 auto;
+	nav {
+		float: left;
+		ul{
+			li{
+				display: inline;
+				a{color: white;text-decoration: none;}
+				float: left;
+				margin: 0px 20px;
+			}
+		}
+	}
+	.menu-action {
+		float: right;
+		color: white;
+	}
+}
+}//header
+#main {
+	position: relative;
+	width: 100%;
+	height: auto;
+	@import "main-slider";
+	#container {
+		position: relative;
+		width: $pc-width;
+		height: auto;
+		margin: 0 auto;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		@import "cat-loop";
+		overflow: hidden;
+	}
+}//main
+// Custom CSS Single-video
+#single-main {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: $main-slider-bg;
+	@import "video-single";
+	@import "playlist-single";
+}
