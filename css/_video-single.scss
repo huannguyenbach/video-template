@@ -10,9 +10,11 @@
 		position: relative;
 		float: left;
 		width: $video-width;
+		height: auto;
 		padding: ($video-width * 9/16) 0 0 0;
 		top: 0px;
 		overflow:hidden;
+		display: table;
 		.video-js {
 			position: absolute;
 			width: 100%!important;
@@ -23,11 +25,15 @@
 		}
 	}
 	.info {
-		.cat {
 		position: relative;
-		width: 100%;
-		height: 30px;
-		margin-bottom:15px;
+		float: right;
+		width: 100% - $video-width;
+		.cat {
+			position: relative;
+			width: 100%;
+			height: 30px;
+			margin-bottom:15px;
+			margin-left: $video-right-margin; 
 			a {
 				color: white;
 				font-size: $cat-font-size;
@@ -37,7 +43,30 @@
 			}
 		}
 		.content {
-
+			h3 {
+				margin-left: $video-right-margin; 
+				font-size: $video-title;
+				a {color: white;}
+			}
+			p {
+				color: #a5a5a5;
+				margin-left: $video-right-margin; 
+				font-size: $cat-font-size;
+				line-height: 20px;
+			}
+			#content-more {
+				margin-left: $video-right-margin; 
+				font-size:24px;
+				color: #000000;
+				text-align: center;
+				width: 24px;
+				height: 24px;
+				background:#a5a5a5;
+				@include border-radius(12px);
+				cursor: pointer;
+				@include transition(1s);
+				
+			}
 		}
 		.share {
 

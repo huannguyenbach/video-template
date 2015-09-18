@@ -1,16 +1,18 @@
-$header-bg: #2C2B2B;
+$header-bg: #000000;
 $pc-width: 90%;
 $slider-bg: #424040;
 $blue1 : #2580ba;
 $spaceBetween : 20px;
 $after-color : #d7d7d7;
 $cat-font-size : 14px;
+$video-title : 22px;
 $img-pro : 9/16;
-$hover-pattern : #4F4E4E;
-$main-slider-bg :#4F4E4E;
+$hover-pattern : #050d17;
+$main-slider-bg :#050d17;
 $main-slide-width: 800px;
 $main-slide-height: 450px;
-$video-width: 66.67%;
+$video-width: 70%;
+$video-right-margin: 30px;
 $a : #2C2B2B;
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -85,7 +87,7 @@ header {
 img#vjs-logobrand-image {
 	position: absolute;
 	top: 4px;
-	right: 4px;
+	left: 4px;
 	transition: visibility 0.1s ease 0s, opacity 0.1s ease 0s;
     visibility: visible;
 }
@@ -99,3 +101,8 @@ img#vjs-logobrand-image {
 	display: none;
 }
 //VIDEO BRAND JS
+.more-toggle {
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg);
+}
