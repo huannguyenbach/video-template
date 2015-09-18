@@ -15,8 +15,8 @@
 		.swiper-slide {
 		    background-position: center;
 		    background-size: cover;
-		    width: 800px;
-		    height: 450px;
+		    width: $main-slide-width;
+		    height: $main-slide-height;
 		 	img {
 				@extend .fullsize;
 			}

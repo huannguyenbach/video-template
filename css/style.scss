@@ -1,5 +1,5 @@
 $header-bg: #2C2B2B;
-$pc-width: 1100px;
+$pc-width: 90%;
 $slider-bg: #424040;
 $blue1 : #2580ba;
 $spaceBetween : 20px;
@@ -8,6 +8,9 @@ $cat-font-size : 14px;
 $img-pro : 9/16;
 $hover-pattern : #4F4E4E;
 $main-slider-bg :#4F4E4E;
+$main-slide-width: 800px;
+$main-slide-height: 450px;
+$video-width: 66.67%;
 $a : #2C2B2B;
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;

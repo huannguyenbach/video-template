@@ -39,41 +39,45 @@
 		position: relative;
 		width: 100%;
 		margin: 10px 0px;
+		height: auto;
 		.swiper-slide {
-			height: auto;	
+			height: auto;
 			.thumb {
-				position: relative;
-				margin-top: 0px;
 				width: 100%;
-				height: (($pc-width - (2 * $spaceBetween)) / 3) * $img-pro;
-				overflow: hidden;
-				.overlay {
-					position: absolute;
+				padding: 56.25% 0 0 0;
+				position: relative;
 				top: 0px;
 				left: 0px;
-				height: 100%;
-				width: 100%;
-				z-index: 2;
-				background: $hover-pattern;
-				opacity: 0;
-				@include transition (1s);
-				img {
+				overflow: hidden;
+					img {
 					position: absolute;
-					top: 50%;
-					left: 50%;
-					width: 64px;
-					height: 64px;
-					margin-top: -32px;
-					margin-left: -32px;
+					top: 0;
+					left: 0;
+					display: block;
+					max-height: 100%;
+					max-width: 100%;
 				}
-				}
-				img {
+				.overlay {
 					position: absolute;
-					bottom: 0px;
+					top: 0px;
+					left: 0px;
 					height: 100%;
-					width: auto;
+					width: 100%;
+					z-index: 2;
+					background: $hover-pattern;
+					opacity: 0;
+					@include transition (1s);
+						img {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							width: 64px;
+							height: 64px;
+							margin-top: -32px;
+							margin-left: -32px;
+						}
+					}
 				}
-			}
 			h3 {
 				position: relative;
 				z-index: 2;

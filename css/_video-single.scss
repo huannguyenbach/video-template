@@ -5,29 +5,42 @@
 	margin: 0 auto;
 	padding: 20px 0px;
 	overflow: hidden;
-	.cat {
+	
+	#video-container {
+		position: relative;
+		float: left;
+		width: $video-width;
+		padding: ($video-width * 9/16) 0 0 0;
+		top: 0px;
+		overflow:hidden;
+		.video-js {
+			position: absolute;
+			width: 100%!important;
+			height: 100%!important;
+			top: 0;
+			left: 0;
+
+		}
+	}
+	.info {
+		.cat {
 		position: relative;
 		width: 100%;
 		height: 30px;
 		margin-bottom:15px;
-		a {
-			color: white;
-			font-size: $cat-font-size;
-			background: $blue1;
-			float: left;
-			padding: 5px;
+			a {
+				color: white;
+				font-size: $cat-font-size;
+				background: $blue1;
+				float: left;
+				padding: 5px;
+			}
 		}
-	}
-	#video-container {
-		position: relative;
-		width: 100%;
-		height: $pc-width * 9/16;
-		overflow:hidden;
-		#video {
-			
-		}
-	}
-	.info {
+		.content {
 
+		}
+		.share {
+
+		}
 	}
 }
