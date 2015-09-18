@@ -18,12 +18,14 @@
 			padding: 5px;
 		}
 	}
-	#video {
+	#video-container {
 		position: relative;
 		width: 100%;
 		height: $pc-width * 9/16;
 		overflow:hidden;
-
+		#video {
+			
+		}
 	}
 	.info {
 

@@ -20,6 +20,7 @@
         <script>
             videojs.options.flash.swf = "js/vendor/videojs/video-js.swf";
         </script>
+        <script src="js/vendor/videojs/youtube.js"></script>
     </head>
     <body>
     	<header id="header" class="header">
@@ -44,11 +45,9 @@
                 </div>
                 <!-- video -->
                 <div id="video-container">
-                   <video class="video-js vjs-default-skin" controls autoplay preload="auto" width="800" height="460" poster="image/3.jpg" data-setup="{}">
-                        <source src="image/iphone6s.mp4" type='video/mp4' />
-                        <track kind="captions" src="" srclang="" label=""></track>
-                        <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-                  </video>
+                   <video id="video" src="" class="video-js vjs-default-skin" controls autoplay preload="auto" width="640" height="360" data-setup='{ "techOrder": ["youtube"], "quality": "720p", "src": "https://www.youtube.com/embed/xjS6SftYQaQ" }'>
+                   <track kind="captions" src="" srclang="en" label=""></track>
+                    </video>
                 </div>
                 
                 <div class="info">
