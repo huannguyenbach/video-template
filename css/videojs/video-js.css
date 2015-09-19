@@ -86,8 +86,7 @@ The default control bar that is a container for most of the controls.
   /* Height includes any margin you want above or below control items */
   height: 3.0em;
   /* background-color-with-alpha */
-  background-color: #07141e;
-  background-color: rgba(7, 20, 30, 0.7);
+  background-color: #0e2f48;
 }
 /* Show the control bar only once the video has started playing */
 .vjs-default-skin.vjs-has-started .vjs-control-bar {
@@ -456,8 +455,7 @@ easily in the skin designer. http://designer.videojs.com/
   opacity: 1;
   /* Need a slightly gray bg so it can be seen on black backgrounds */
   /* background-color-with-alpha */
-  background-color: #07141e;
-  background-color: rgba(7, 20, 30, 0.7);
+  background-color: #0e2f48;
   border: 0em solid #3b4249;
   /* border-radius */
   -webkit-border-radius: 1.5em;
@@ -692,8 +690,7 @@ easily in the skin designer. http://designer.videojs.com/
   left: -5em;
   /* Width of menu - width of button / 2 */
   /* background-color-with-alpha */
-  background-color: #07141e;
-  background-color: rgba(7, 20, 30, 0.7);
+  background-color: #0e2f48;
   /* box-shadow */
   -webkit-box-shadow: -0.2em -0.2em 0.3em rgba(255, 255, 255, 0.2);
   -moz-box-shadow: -0.2em -0.2em 0.3em rgba(255, 255, 255, 0.2);

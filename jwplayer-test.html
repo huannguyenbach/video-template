@@ -14,9 +14,6 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/vendor/swiper.jquery.min.js"></script>
         <script src="js/vendor/jwplayer/jwplayer.js"></script>
-        <script>jwplayer.key="RwJWUDqn6m9HE+rE0t0twTvBkW3SljaIFP/TuA=="</script>
-        
-        
     </head>
     <body>
     	<header id="header" class="header">
@@ -40,12 +37,11 @@
                     <a href="#" title="">Nội Thất</a>
                 </div>
                 <div id="video"><!-- video -->
-                   <video id="video1">
-                       
-                   </video>
+                   
                 </div>
+                <script>jwplayer.key="RwJWUDqn6m9HE+rE0t0twTvBkW3SljaIFP/TuA=="</script>
                 <script type='text/javascript'>
-                    var playerInstance = jwplayer('video1');
+                    var playerInstance = jwplayer('video');
                       playerInstance.setup({ 
                         file: 'http://content.jwplatform.com/videos/1t5Fk4rT-B63WwFw9.mp4', 
                         image: 'image/3.jpg',

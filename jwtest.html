@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="http://content.jwplatform.com/libraries/RN5WqQS0.js"></script>
+	
+	<title>Youtube</title>
+	
+</head>
+<body>
+	<center>
+		<div id="element">Loading the player...</div>
+		<script>jwplayer.key="RwJWUDqn6m9HE+rE0t0twTvBkW3SljaIFP/TuA==";</script>
+		<script>
+		var playerInstance = jwplayer("element");
+		playerInstance.setup({
+		file: "https://www.youtube.com/watch?v=yX8yrOAjfKM",
+		image:'http://aetherforce.com/wp-content/uploads/2015/01/the-matrix-online-wallpaper-HD-.jpg',
+		width: '80%',
+		aspectratio:'16:9'
+		});
+		</script>
+	</center>
+</body>
+</html>

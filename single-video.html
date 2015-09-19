@@ -5,11 +5,10 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Video</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/swiper.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">    
         <link rel="stylesheet" href="css/style.css">
         <link href="css/videojs/video-js.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
@@ -20,7 +19,7 @@
         <script>
             videojs.options.flash.swf = "js/vendor/videojs/video-js.swf";
         </script>
-        <script src="js/main.js"></script>
+        <script src="js/main.js"></script> 
     </head>
     <body>
     	<header id="header" class="header">
@@ -65,18 +64,16 @@
                         <p class="content-more">
                             Chấp nhận nặng gánh tài chính, trung vệ của Sông Lam Nghệ An muốn Anh Khoa được điều trị tốt nhất, có thể sớm trở lại với sân cỏ. 
                         </p>
-                        <div id="content-more">+</div>
-                    </div>
-                    <div class="share"><!-- nut share -->
-                        
+                        <div id="content-more">+</div>  
+                        <div id="share"></div>
                     </div>
                 </div>
+                <!-- INFO -->
             </div>
             <div class="playlist">
                 
             </div>
         </main>
-
         <!-- LOGO BRAND JS -->
         <script src="js/vendor/videojs/videojs.logobrand.js"></script>
         <script>
@@ -88,6 +85,18 @@
                 image: "image/logo-video.png",
                 destination: "http://www.videojs.com/"
             });
+        </script>
+        <!-- // -->
+        <!-- SHARE BUTTON -->
+        <script src="js/vendor/jssocial/jssocials.min.js"></script>
+        <script>
+        $("#share").jsSocials({
+            url: "http://noithatblue.com",//Thay đổi link share
+            text: "Nội Thất Blue", //Thay đổi text share
+            showLabel: false,
+            showCount: "inside",
+            shares: ["facebook", "twitter", "googleplus", "pinterest"]
+        });
         </script>
         <!-- // -->
     </body>

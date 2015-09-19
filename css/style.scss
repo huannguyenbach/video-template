@@ -27,7 +27,7 @@ $a : #2C2B2B;
 	 -o-transition: all $time ease;
 	transition: all $time ease;
 }
-
+@import "normalize";
 a {text-decoration:none;}
 header {
 	position: relative;
@@ -86,8 +86,8 @@ header {
 //VIDEO BRAND JS
 img#vjs-logobrand-image {
 	position: absolute;
-	top: 4px;
-	left: 4px;
+	top: 8px;
+	left: 8px;
 	transition: visibility 0.1s ease 0s, opacity 0.1s ease 0s;
     visibility: visible;
 }
@@ -106,3 +106,8 @@ img#vjs-logobrand-image {
     -webkit-transform: rotate(45deg); /* Safari */
     transform: rotate(45deg);
 }
+//SWIPER SLIDE
+@import "swiper";
+//SHARE SOCIAL
+@import "share";
+//-----
