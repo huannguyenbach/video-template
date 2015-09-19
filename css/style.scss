@@ -14,6 +14,9 @@ $main-slide-height: 450px;
 $video-width: 70%;
 $video-right-margin: 30px;
 $a : #2C2B2B;
+$playlist-bg: #000000;
+$swiper-scrollbar: rgba(#000000, 0.2);
+$swiper-scrollbar-drag-color: rgba(#ffffff, 1);
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;

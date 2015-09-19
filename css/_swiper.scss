@@ -365,17 +365,17 @@ button.swiper-pagination-bullet {
 }
 /* Scrollbar */
 .swiper-scrollbar {
-  border-radius: 10px;
+  border-radius: 3px;
   position: relative;
   -ms-touch-action: none;
-  background: rgba(0, 0, 0, 0.1);
+  background: $swiper-scrollbar;
 }
 .swiper-container-horizontal > .swiper-scrollbar {
   position: absolute;
   left: 1%;
   bottom: 3px;
   z-index: 50;
-  height: 5px;
+  height: 10px;
   width: 98%;
 }
 .swiper-container-vertical > .swiper-scrollbar {
@@ -390,8 +390,8 @@ button.swiper-pagination-bullet {
   height: 100%;
   width: 100%;
   position: relative;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
+  background: $swiper-scrollbar-drag-color;
+  border-radius: 3px;
   left: 0;
   top: 0;
 }
