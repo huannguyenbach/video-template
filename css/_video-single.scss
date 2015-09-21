@@ -3,7 +3,7 @@
 	width: $pc-width;
 	height: auto;
 	margin: 0 auto;
-	padding: 20px 0px;
+	padding: $single-base-margin 0px;
 	overflow: hidden;
 	#video-container {
 		position: relative;
@@ -31,8 +31,7 @@
 			position: relative;
 			width: 100%;
 			height: 30px;
-			margin-bottom:15px;
-			margin-left: $video-right-margin; 
+			margin-left: $single-base-margin; 
 			a {
 				color: white;
 				font-size: $cat-font-size;
@@ -42,20 +41,24 @@
 			}
 		}
 		.content {
+			position: relative;
+			width: 100%;
 			h3 {
-				margin-left: $video-right-margin; 
+				margin-left: $single-base-margin; 
+				margin-top:$single-base-margin;
+				margin-bottom:$single-base-margin;
 				font-size: $video-title;
 				a {color: white;}
 				line-height: 30px;
 			}
 			p {
 				color: #a5a5a5;
-				margin-left: $video-right-margin; 
+				margin-left: $single-base-margin; 
 				font-size: $cat-font-size;
 				line-height: 20px;
 			}
 			#content-more {
-				margin-left: $video-right-margin; 
+				margin-left: $single-base-margin; 
 				font-size:24px;
 				line-height: 24px;
 				color: #000000;
@@ -66,12 +69,12 @@
 				@include border-radius(12px);
 				cursor: pointer;
 				@include transition(1s);
-				margin-top:25px;
+				margin-top:$single-base-margin;
 				
 			}
 			#share {
-				margin-left: $video-right-margin;
-				margin-top:25px;
+				margin-left: $single-base-margin;
+				margin-top:$single-base-margin;
 			}
 		}
 

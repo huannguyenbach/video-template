@@ -1,4 +1,4 @@
-$header-bg: #000000;
+$header-bg: #ffffff;
 $pc-width: 90%;
 $slider-bg: #424040;
 $blue1 : #2580ba;
@@ -12,11 +12,12 @@ $main-slider-bg :#050d17;
 $main-slide-width: 800px;
 $main-slide-height: 450px;
 $video-width: 70%;
-$video-right-margin: 30px;
 $a : #2C2B2B;
 $playlist-bg: #000000;
-$swiper-scrollbar: rgba(#000000, 0.2);
-$swiper-scrollbar-drag-color: rgba(#ffffff, 1);
+$swiper-scrollbar: rgba(#ffffff, 1);
+$swiper-scrollbar-drag-color: rgba(#2C2B2B, 0.5);
+$single-base-margin:30px;
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -89,8 +90,8 @@ header {
 //VIDEO BRAND JS
 img#vjs-logobrand-image {
 	position: absolute;
-	top: 8px;
-	left: 8px;
+	top: 12px;
+	right: 20px;
 	transition: visibility 0.1s ease 0s, opacity 0.1s ease 0s;
     visibility: visible;
 }
