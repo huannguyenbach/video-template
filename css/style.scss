@@ -7,7 +7,7 @@ $after-color : #d7d7d7;
 $cat-font-size : 14px;
 $video-title : 22px;
 $img-pro : 9/16;
-$hover-pattern : #050d17;
+$hover-pattern : rgba(#ffffff, 0);
 $main-slider-bg :#050d17;
 $main-slide-width: 800px;
 $main-slide-height: 450px;
@@ -31,6 +31,40 @@ a {text-decoration:none;}
 	 -o-transition: all $time ease;
 	transition: all $time ease;
 }
+/*********************
+BREAKPOINTS
+*********************/
+@mixin media($breakpoint) {
+  @if $breakpoint == "small" {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "medium" {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "large" {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "retina" {
+    @media (min-width: 1600px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == "smaller" {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+}
+///////////////////
 @import "normalize";
 @import "header";
 #main {
@@ -38,6 +72,7 @@ a {text-decoration:none;}
 	width: 100%;
 	height: auto;
 	@import "main-slider";
+	overflow:hidden;
 	#container {
 		position: relative;
 		width: $pc-width;
@@ -55,6 +90,7 @@ a {text-decoration:none;}
 	width: 100%;
 	height: auto;
 	background: $main-slider-bg;
+	overflow:hidden;
 	@import "video-single";
 	@import "playlist-single";
 }
@@ -86,3 +122,5 @@ img#vjs-logobrand-image {
 //SHARE SOCIAL
 @import "share";
 //-----
+@import "achives-video";
+

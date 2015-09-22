@@ -5,6 +5,9 @@ header {
 	width: 100%;
 	height: 50px;
 	background: $header-bg;
+	box-shadow: 1px 0 15px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 1px 0 15px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 0 15px rgba(0,0,0,0.2);
 	#container {
 		width: $pc-width;
 		height: 100%;
@@ -13,6 +16,9 @@ header {
 			position: relative;
 			float: left;
 			margin-right: $single-base-margin;
+			@include media(small){
+					margin-right:0px;
+			}
 			img {
 				height: 100%;
 				width: auto;
@@ -22,6 +28,9 @@ header {
 			float: left;
 			height: 50px;
 			text-align:center;
+			@include media(small){
+					float:right;
+			}
 			a.parent {
 				position: relative;
 				float:left;
@@ -33,6 +42,9 @@ header {
 				line-height:50px;
 				padding: 0px 20px;
 				margin-left: $single-base-margin;
+				@include media(small){
+					margin-left:0px;
+				}
 				&:hover {
 					background:$blue1;
 					color: #ffffff;
@@ -65,6 +77,13 @@ header {
 				padding:0px 20px;
 				background:$header-bg;
 				border-top:5px solid $blue1;
+				border-left:1px solid $after-color;
+				border-right:1px solid $after-color;
+				border-bottom:1px solid $after-color;
+				@include media(small){
+					text-align:right;
+					right:0px;
+				}
 				ul {
 					margin:0px;
 					padding: 10px 0px 0px 0px;
@@ -82,6 +101,13 @@ header {
 						}
 					}
 					li:last-child {border-bottom:none;}
+					li.li-home {
+						display: none;
+						@include media(small){
+							display:block;
+						}
+					}
+					
 				}
 			}
 			&:hover .parent{
@@ -93,6 +119,9 @@ header {
 			float: right;
 			height: 50px;
 			text-align:center;
+			@include media(small){
+					display:none;
+			}
 			a {
 				display: block;
 				height:50px;

@@ -12,7 +12,7 @@
         $('.dropdown').hide();
         $('.parent').click(function(event){
         	event.stopPropagation();
-        	$('.dropdown').slideToggle('slow');
+        	$('.dropdown').slideToggle('fast');
         });
         $('.dropdown').on('click', function(event){
         	event.stopPropagation();
