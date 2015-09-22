@@ -6,26 +6,45 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Video</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">    
         <link rel="stylesheet" href="css/style.css">
+        <link href="css/videojs/video-js.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <!-- SWIPER -->
         <script src="js/vendor/swiper.jquery.min.js"></script>
-        <script src="js/main.js"></script>
+        <!-- VIDEOJS -->
+        <script src="js/vendor/videojs/video.js"></script>
+        <script>
+            videojs.options.flash.swf = "js/vendor/videojs/video-js.swf";
+        </script>
+        <script src="js/main.js"></script> 
     </head>
     <body>
     	<header id="header" class="header">
     		<div id="container">
-	    		<nav>
-	    			<ul class="menu-video">
-	    				<li><a href="#" title="">Home</a></li>
-						<li><a href="#" title="">Video</a></li>
-						<li><a href="#" title="">Channel</a></li>
-	    			</ul><!-- video-menu -->
+	    		<div id="logo">
+                    <a href="#">
+                        <img src="image/header-logo.png" alt="BLUE INTERIOR">
+                    </a>      
+                </div>
+                <nav class="nav-pc">
+                            <a href="#" class="parent">
+                                <i class="fa fa-video-camera"></i>&nbsp; KÊNH
+                            </a>
+                            <div class="dropdown">
+                               <ul>
+                                    <li><a href="#">Thiết kế và kiến trúc</a></li>
+                                    <li><a href="#">Sáng tạo</a></li>
+                                    <li><a href="#">Không gian ngoài trời</a></li>
+                                    <li><a href="#">Phong cảnh</a></li>
+                                </ul> 
+                            </div>
 	    		</nav>
 	    		<div class="menu-action">
-	    			<p>0903.446.413</p>	
+	    			<a href="#">noithatblue.com</a>	
 	    		</div><!-- menu-action -->
 	    	</div><!-- container-->
     	</header><!-- /header -->
